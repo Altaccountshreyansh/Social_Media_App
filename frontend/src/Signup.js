@@ -2,6 +2,11 @@ import React from 'react'
 import {useState} from 'react';
 import './Signup.css'
 import Home from './Home'
+import axios from 'axios'
+
+const baseUrl = '/api/user'
+
+
 const Signup = () => {
 
 	const [name, setName] = useState('')
@@ -23,9 +28,22 @@ const Signup = () => {
 	const submitData = (event) => {
 		event.preventDefault()
 		console.log('hello')
-		setName('')
-		setEmail('')
-		setPassword('')
+		const newUser = {
+			name : name, 
+			email : email, 
+			password : password
+		} 
+
+		axios.post(baseUrl + '/signup', newUser)
+			.then(returnedData => {
+				console.log(returnedData)
+				setName('')
+				setEmail('')
+				setPassword('')
+			})
+			.catch(error => {
+				console.log(error)
+			})
 	}
 	return (
 			<div>
