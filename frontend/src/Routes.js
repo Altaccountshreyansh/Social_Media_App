@@ -9,7 +9,9 @@ import Signin from './Signin';
 const Routes = () => {
 		return (
 		<Fragment>
+
 			<Switch>
+			
 				<Route path = '/' component = {Home} exact />
 				<Route path = "/signup" component = {Signup} exact />
 				<Route path = "/signin" component = {Signin} exact />
