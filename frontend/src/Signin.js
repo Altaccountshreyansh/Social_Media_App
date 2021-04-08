@@ -15,15 +15,15 @@ const Signin = () => {
 	const [flag, setFlag] = useState(false)
 
 	const handleNameChange = (event) => {
-		console.log(event.target.value)
+		// console.log(event.target.value)
 		setName(event.target.value)
 	}
 	const handleEmailChange = (event) => {
-		console.log(event.target.value)
+		// console.log(event.target.value)
 		setEmail(event.target.value)
 	}
 	const handlePasswordChange = (event) => {
-		console.log(event.target.value)
+		// console.log(event.target.value)
 		setPassword(event.target.value)
 	}
 	const submitData = (event) => {
@@ -37,6 +37,9 @@ const Signin = () => {
 		axios.post(baseUrl + '/signin', user_cred)
 			.then(response => {
 				console.log("Hey Logged In!!")
+				setEmail('')
+				setPassword('')
+				setFlag(true)
 			})
 			.catch(error => {
 				console.log(error.response.data)

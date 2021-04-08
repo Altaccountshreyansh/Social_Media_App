@@ -42,7 +42,8 @@ app.post('/api/user/signin', (request, response) => {
 
 	User.find({email : body.email})
 		.then(result => {
-			if(request.password === undefined) {
+			if(result[0].password === undefined) {
+				console.log(result[0].password)
 				response.status(404).json({message : "failure"})
 			}
 			else if(result[0].password === body.password) {
