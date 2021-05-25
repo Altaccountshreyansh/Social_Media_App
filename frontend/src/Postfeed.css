@@ -1,0 +1,113 @@
+.outer-container {
+	text-align: center;
+	border: 2px solid white;
+	padding: 20px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 10px black;
+	min-width: 30%;
+
+	top: 10%;
+	margin: 0;
+  	position: absolute;
+  	left: 10%;
+
+}
+
+textarea {
+	display: block;
+	resize: none;
+	overflow: hidden;
+  padding: 10px;
+  height: 20px;
+      margin-left: auto;
+    margin-right: auto;
+  width: 50%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #A1B2C5;
+  outline: none;
+  font-size: 1rem;
+  transition: .5s ease all;
+}
+.test {
+	padding: 20px;
+}
+
+.btn {
+  padding: 0px 20px;
+  padding-top: 3px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-family: var(--font1);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn1 {
+  padding: 0px 10px 0px 10px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-family: var(--font1);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.btn1:hover {
+  color: white;
+  background: grey;
+  opacity: 0.7;
+}
+
+
+.btn:hover {
+  color: white;
+  background: grey;
+  opacity: 0.7;
+}
+
+.side-container {
+
+		text-align: center;
+	border: 2px solid white;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 10px black;
+	min-width: 30%;
+
+
+	margin: 0;
+  	position: absolute;
+top: 10%;
+  	right: 10%;
+
+
+  	max-height: inherit;
+}
+
+.main {
+	display: flex;
+}
+.col {
+  flex: 1; /* additionally, equal width */
+  
+  
+  border: solid;
+}
+
+h1 button {
+	float: right;
+}
+
+.align {
+	text-align: left;
+	
+}
+
+.align-img {
+	float: left;
+	width: 20%;
+}
